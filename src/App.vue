@@ -1,16 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <InputFile v-model="name" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import InputFile from './components/InputFile';
 export default {
   name: 'App',
+  
   components: {
-    HelloWorld
-  }
+    InputFile
+  },
+  data(){
+   return {
+       name: '',
+    }
+  },
+  methods:{ }
 }
 </script>
 
